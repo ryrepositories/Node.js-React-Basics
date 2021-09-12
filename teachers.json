@@ -1,0 +1,78 @@
+[
+    {
+       "firstName": "Leslie",
+       "lastName": "Smith",
+       "gender": "female",
+       "age": 28,
+       "staff_ID":"129567" ,
+       "email": "lsmith@abc.org",
+       "subject_teaching":"Biology",
+       "status":"Active"
+       
+    },
+    {
+      "firstName": "Lisa",
+      "lastName": "Sandowal",
+      "gender": "female",
+      "age": 34,
+      "staff_ID":"454579" ,
+      "email": "lsandowal@abc.org",
+      "subject_teaching":"Algebra",
+      "status":"Active"
+    },
+    {
+      "firstName": "James",
+      "lastName": "Todd",
+      "gender": "male",
+      "age": 29,
+      "staff_ID":"349383" ,
+      "email": "jtodd@abc.org",
+      "subject_teaching":"English10",
+      "status":"Active"
+    },
+
+    {
+      "firstName": "Patel",
+      "lastName": "Punjabi",
+      "gender": "male",
+      "age": 44,
+      "staff_ID":"094584" ,
+      "email": "ppunjabi@abc.org",
+      "subject_teaching":"Woodshop",
+      "status":"active"
+      
+   },
+   {
+      "firstName": "Sarah",
+      "lastName": "Stevenson",
+      "gender": "female",
+      "age": 24,
+      "staff_ID":"345623" ,
+      "email": "sstevenson@abc.org",
+      "subject_teaching":"PhotoshopInt",
+      "status":"Active"
+      
+   },
+   {
+      "firstName": "Mario",
+      "lastName": "Martinez",
+      "gender": "male",
+      "age": 35,
+      "staff_ID":"042355" ,
+      "email": "mmartinez@abc.org",
+      "subject_teaching":"Chemistry",
+      "status":"Active"
+      
+   },
+   {
+      "firstName": "Ahmed",
+      "lastName": "Acer",
+      "gender": "male",
+      "age": 28,
+      "staff_ID":"126588" ,
+      "email": "aacer@abc.org",
+      "subject_teaching":"swimming",
+      "status":"Inactive"
+      
+   }
+  ]

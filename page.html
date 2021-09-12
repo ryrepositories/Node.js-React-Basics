@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- need meta viewport tag to allow for css media queries on mobile -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>React Import External JSON</title>
+	<!-- local css -->
+	<style>
+		ol {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+		li {
+			display: inline-block;
+      padding: 20px;
+		}
+	</style>
+  <!-- load jquery to use for external json loading -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- load React - note when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- load babel transpiler to convert React's JSX markup to pure JavaScript-->
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+	<!-- create an element that can be the root element for your react application -->
+	<div id="myApp"></div>
+
+  <!-- load our custom script with react component -->
+  <script type="text/babel">
+  "use strict";
+    function ProjectList(teachers) {
+
+      return <div>
+          <ol>
+          {
+            teachers.list.map( 
+                (item,index) => (
+                  <li key={index}>   
+                    {item.staff_ID}   ,    
+                     {item.firstName}    ,
+                     {item.subject_teaching}  
+                  </li>
+                )
+              )
+            }
+          </ol>
+        </div>;
+    }
+  $.getJSON("teachers.json", function(jsonFromJquery) {
+    ReactDOM.render(
+      <ProjectList list={jsonFromJquery} />,
+      document.getElementById("myApp")
+    );
+  }
+  );
+  </script>
+</body>
+
+</html>
